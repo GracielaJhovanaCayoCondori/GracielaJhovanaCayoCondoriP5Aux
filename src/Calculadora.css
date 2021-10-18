@@ -1,0 +1,72 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+}
+body {
+  background: rgb(120, 184, 128);
+}
+
+.container {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 259px;
+  font-size: 20px;
+  text-align: center;
+  background: rgb(47, 47, 218);
+  border-radius: 5 px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-auto-rows: minmax(60px, auto);
+}
+input[type="text"] {
+  height: 75px;
+  width: 256px;
+  margin: 0px;
+  background-color: #cad3dbd3;
+  border: 0px;
+  color: rgb(21, 41, 29);
+  text-align: right;
+  letter-spacing: 1px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.col-2 {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(32, 153, 48);
+}
+.col-3 {
+  grid-row: span 2;
+  background: rgb(32, 153, 48);
+}
+#backspace {
+  color: #262834;
+}
+button {
+  margin: 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #51c979;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+button:focus {
+  background-color: chartreuse;
+}
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
